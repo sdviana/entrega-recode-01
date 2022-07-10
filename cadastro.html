@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="cadastro.css">
+  <title>Cadastro</title>
+</head>
+<body>
+  <nav class="navbar bg-light">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="site.html">
+        <img src="logo site fs.png" alt="" width="80" height="40" class="d-inline-block align-text-top">
+      </a>
+    </div>
+  </nav>
+  <div>
+    <h1 id="titulo">Cadastro</h1>
+    <p id="subtitulo">Complete suas informações</p>
+  </div>
+  <form>
+    <fieldset class="grupo">
+      <div class="campo">
+        <label for="nome"><strong> Nome</strong></label>
+        <input type="text" name="Nome" id="nome" required>
+      </div>
+      <div  class="campo">
+        <label for="sobrenome"><strong> Sobrenome </strong></label>
+        <input type="text" name="sobrenome" id="sobrenome">
+      </div>
+
+    </fieldset>
+    <div  class="campo">
+      <label for="email"> <strong> email </strong></label>
+      <input type="email" name="email" id="email" required>
+    </div>
+    <div  class="campo">
+      <label for="estado"> <strong>Estado </strong></label>
+      <select id="Estado">
+        <option selected disabled value="">selecione</option>
+        <option>Rio de janeiro</option>
+        <option>Bahia</option>
+        <option>sao paulo</option>
+        <option>recife</option>
+        <option>parana</option>
+        <option>paraiba</option>
+        <option>rio grande do norte</option>
+      </select>
+    </div>
+    <div  class="campo">
+      <br>
+      <label for="falaumpouco"> Fale um pouco sobre as ferias que procura </label>
+      <textarea rows="7" style=" width: 26em;" id="falaumpouco" name="falaumpouco"></textarea>
+    </div>
+    <button class="botao" type="submit">Concluir</button>
+  </form>
+</body>
+</html>
